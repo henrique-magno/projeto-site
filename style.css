@@ -1,23 +1,28 @@
+
 @font-face {
-    font-family: 'tech';
-    src: url('fonts/AstroSpace-0Wl3o.otf') format('opentype'), url('fonts/AstroSpace-0Wl3o.otf') format('truetype');
-    font-weight: normal;
-}
-@font-face {
-    font-family: 'indian';
-    src: url('fonts/Mahaputra.ttf') format('opentype');
+    font-family: 'titulo';
+    src: url('fonts/moon_get-Heavy.ttf') format('opentype');
     font-weight: normal;
     font-weight: normal;
 }
+:root{
+    --gradient: radial-gradient(circle, #cca949, transparent 70%)
+}
+
 *{
     margin: 0px;
     padding: 0px;
 
     }
 
+img#logo{
+    display: block;
+    margin: auto;
+    padding-right: 25px;
+}
 
 body{
-    background-color: #96B9F2;
+    background-color: #d6d6d6;
 }
 a.externo::after{
     content: '\1F517';
@@ -25,59 +30,78 @@ a.externo::after{
     
 }
 
+section > p > a{
+    text-decoration: none;
+    color: #E0001B;
+    
+}
+
+section > p > a:hover{
+    text-decoration: underline;
+    color: #E0001B;
+    font-weight: 500;
+    
+}
+
 header{
-    background-image: linear-gradient(to bottom, #5E99FA, #ABC9FB);
+    background-image: linear-gradient(to bottom, #303030, #000000);
     color: white;
     font-size: 10px;
     height: 200px;
     box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.329);
+    border-style: solid;
+    border-width: 3px;
+    border-left: 0px;
+    border-right: 0px;
+    border-top: 0px;
+    border-color: #cca949;
+    margin-bottom: 20px;
     
 }
-header > h1{
-    font: 6em 'indian';
-    font-weight: 900;
-    color: rgb(187, 4, 4);
-    padding-top: 30px;
-    text-align: center;
-    border-radius: 5px;
-}
+
 
 header > p{
     font: 15px 'Segoe UI';
-    color: rgb(161, 30, 30);
+    color: rgb(255, 255, 255);
     text-align: center;
     padding-bottom: 10px;
     font-weight: 700;
 }
 strong{
-    background-color: lightcoral;
-    color: white;
+    color: #e0001b;
+    font-weight: 900;
 }
 
-nav{            
-    padding-top: 7px;
+nav{ 
+    display: block;
+    margin: auto;           
+    padding: 6px;
     text-align: center;
-    border-radius: 5px;
+    border-width: 1px;
+    border-style: solid;
+    border-image-source: var(--gradient);
+    border-image-slice: 2;
 }
 
 nav > a{
     text-align: center;
     text-decoration: none;
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
+    color: #fff9ea;
+    font-family: 'arial';
+    font-size: 1.3em;
     margin-right: 30px;
     padding-left: 30px;
-    
+
 }
 
 #a:hover, #b:hover, #c:hover, #d:hover{
-    background-color: #5E99FA;
+    margin: auto;
+    background-color: #aa8d3e;
+    color: #ffffff;
     text-align: center;
-    padding: 10px;
-    border-radius: 4px;
-    text-decoration: underline;
-    transition-duration: 1s;
+    padding: 6.7px;
+    transition-duration: 0.2s;
+    margin-top: 0px;
     
 }
 
@@ -88,6 +112,8 @@ main{
     max-width: 800px;
     padding: 20px;
     overflow: auto;
+    margin-bottom: 30px;
+    border-radius: 0px 0px 10px 10px;
 }
 
 main img.peq{
@@ -108,12 +134,15 @@ section#dois{
 }
 
 section > h1{
-    font: normal normal 2em 'indian';
-    color: yellow;
+    font: normal normal 1.2em 'titulo';
+    color: #e0001b;
     padding: 10px;
     padding-top: 20px;
-    background-image: linear-gradient(to right, #2b6877, transparent);
-    border-radius: 20px;
+    background-image: linear-gradient(to right, #000000 80%, transparent 150%);
+    height: 30px;
+    margin: auto;
+
+
 }
 
 section > p{
@@ -126,14 +155,17 @@ section > p{
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+
+
 section > h2{
-    background-image: linear-gradient(to right, rgb(71, 146, 175), transparent);
-    border-radius: 20px;
-    color: yellow;
-    font-weight: 600;
+    background-image: linear-gradient(to right, #000000 80%, transparent 150%);
+    color: #e90a24;
     padding: 5px;
-    font: normal normal 2em 'indian';
+    font: normal normal 1em 'titulo';
     padding-left: 20px;
+    height: 30px;
+    padding-top: 20px;
+
 }
 
 img.imagens{
@@ -143,13 +175,6 @@ img.imagens{
 
 }
 
-source.telacel{
-    background-color: #2b6877;
-    display: block;
-    width: 220%;
-}
-
-
 div.video{
     background-color: #ffffff;
     display: block;
@@ -158,6 +183,7 @@ div.video{
     padding-bottom: 57%;
     position: relative;
 }
+
 
 div.video > iframe{
     position: absolute;
@@ -171,21 +197,21 @@ div.video > iframe{
 aside{
     display: block;
     margin: auto;
-    background-color: rgb(201, 250, 250);
+    background-color: rgb(194, 194, 194);
     max-width: 700px;
     border-radius: 20px;
-    box-shadow: 5px 7px 6px 0px rgba(0, 0, 0, 0.192);
+    box-shadow: 5px 7px 6px 0px rgba(160, 160, 160, 0.041);
 
 
 
 }
 
 aside > h3{
-    font: normal normal 2em 'indian';
-    color: rgb(255, 255, 0);
+    font: normal normal 0.9em 'titulo';
+    color: #e0001b;
     padding: 10px;
     padding-left: 20px;
-    background-image: linear-gradient(to right, rgb(44, 107, 107), transparent);
+    background-image: linear-gradient(to right, rgb(31, 31, 31)90%, transparent 150%);
     border-radius: 20px 20px 0px 0px;
 
 

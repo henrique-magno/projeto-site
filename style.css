@@ -97,6 +97,41 @@ strong{
     font-weight: 900;
 }
 
+.container{
+    position: absolute;
+    margin: auto;
+    min-height: 50px;
+    left: 40%;
+    top: 60px;
+    width: 400px;
+}
+
+.search-bar{
+    margin: auto;
+    background-color: #dadada;
+
+
+    border-radius: 10px;
+}
+.search-bar input{
+    background: transparent;
+    flex: 1;
+    border: 0;
+    outline: none;
+
+    height: 20px;
+    font-size: 16px;
+    color: #E0001B;
+    margin: auto;
+    
+}
+
+::placeholder{
+    color: #E0001B;
+}
+
+
+
 nav{ 
     display: block;
     margin: auto;           
